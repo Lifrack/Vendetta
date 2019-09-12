@@ -1,11 +1,11 @@
 import React from 'react';
-//import './navbar.css';
+import './navbar.css';
 
-function App() {
+function Navbar() {
   return (
     <div className="App">
       <nav className="navbar" className="navbar navbar-expand-lg shadow p-3 mb-5 bg-white rounded">
-  <a className="navbar-brand" onClick="">Vendetta</a>
+  <a className="navbar-brand">Vendetta</a>
   <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
     <span className="navbar-toggler-icon"></span>
   </button>
@@ -27,4 +27,4 @@ function App() {
   );
 }
 
-export default App;
+export default Navbar;
