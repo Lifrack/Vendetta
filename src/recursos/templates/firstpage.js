@@ -1,8 +1,8 @@
 import React from 'react';
-import Navbar from './navbar';
-import Bcard from './card';
-import imgone from './card1.png';
-import Footer from './footer';
+import Navbar from '../componentes/navbar';
+import Bcard from '../componentes/card';
+import imgone from '../img/card1.png';
+import Footer from '../componentes/footer';
 
 function Firstpage() {
   return (
