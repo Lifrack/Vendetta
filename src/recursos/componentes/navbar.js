@@ -1,5 +1,7 @@
 import React from 'react';
 import '../css/navbar.css';
+import LoginForm from '../componentes/login';
+import {BrowserRouter, Route} from 'react-router-dom';
 
 function Navbar() {
   return (
@@ -12,13 +14,16 @@ function Navbar() {
   <div className="collapse navbar-collapse" id="navbarNavDropdown">
     <ul className="navbar-nav">
       <li className="nav-item active">
-        <a className="nav-link" href="#">Características <span className="sr-only">(current)</span></a>
+        <a className="nav-link" href="#">Características</a>
+      </li>
+      <li className="nav-item active">
+        <a className="nav-link" href="#">Plugins</a>
       </li>
       <li className="nav-item">
         <a className="nav-link" href="#">Precios</a>
       </li>
       <li className="nav-item">
-        <a className="btn btn-outline-success" href="#">Ir al panel</a>
+        <a className="btn btn-outline-success" href="#" onClick={LoginForm}>Ir al panel</a>
       </li>
     </ul>
   </div>
