@@ -13,6 +13,7 @@ h6 {
 }
 
 header.masthead {
+    background-image: url('../img/landingimg.jpg');
     position: relative;
     background-color: #343a40;
     background-size: cover;
