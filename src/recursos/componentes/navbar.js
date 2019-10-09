@@ -1,6 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
-import '../css/navbar.css';
+import '../css/navbar.scss';
 import Caracteristicas from '../templates/caracteristicas';
 import Landingpage from '../templates/landingpage';
 import Plugins from '../templates/plugins';

@@ -1,5 +1,5 @@
 import React from 'react';
-import '../css/footer.css';
+import '../css/footer.scss';
 import imgfacebook from '../img/facebook.png'
 import imgyoutube from '../img/youtube.png'
 import imgemail from '../img/email.png'
