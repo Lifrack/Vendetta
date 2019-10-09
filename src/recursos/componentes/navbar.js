@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import '../css/navbar.css';
 import Caracteristicas from '../templates/caracteristicas';
 import Landingpage from '../templates/landingpage';
+import Plugins from '../templates/plugins';
 
 function Navbar() {
   return (
@@ -14,11 +15,11 @@ function Navbar() {
   </button>
   <div className="collapse navbar-collapse" id="navbarNavDropdown">
     <ul className="navbar-nav">
-      <li className="nav-item active">
+      <li className="nav-item">
         <Link to="/caracteristicas" className="nav-link">Caracteristicas</Link>
       </li>
-      <li className="nav-item active">
-        <a className="nav-link" href="#">Plugins</a>
+      <li className="nav-item">
+      <Link to="/plugins" className="nav-link">Plugins</Link>
       </li>
       <li className="nav-item">
         <a className="nav-link" href="#">Precios</a>
@@ -32,6 +33,7 @@ function Navbar() {
 
 <Route exact path="/" component={Landingpage} />
 <Route path="/caracteristicas" component={Caracteristicas} />
+<Route path="/plugins" component={Plugins} />
 
 </Router>
   );
