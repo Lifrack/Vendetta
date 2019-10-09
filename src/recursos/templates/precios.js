@@ -2,7 +2,9 @@ import React from 'react';
 
 function Precios(){
     return (
-        <h1>Precios</h1>
+        <div className="main">
+            <h1>Precios</h1>
+        </div>
     );
 }
 

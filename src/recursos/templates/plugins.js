@@ -2,7 +2,9 @@ import React from 'react';
 
 function Plugins(){
     return (
-        <h1>Plugins</h1>
+        <div className="main">
+            <h1>Plugins</h1>
+        </div>
     );
 }
 

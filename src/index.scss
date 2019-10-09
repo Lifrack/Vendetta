@@ -1,1 +1,8 @@
 @import '~bootstrap/scss/bootstrap';
+
+$marjin: 110px;
+
+.main {
+    margin-top: $marjin;
+    margin-bottom: $marjin;
+}

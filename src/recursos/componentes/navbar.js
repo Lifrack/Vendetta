@@ -4,6 +4,7 @@ import '../css/navbar.scss';
 import Caracteristicas from '../templates/caracteristicas';
 import Landingpage from '../templates/landingpage';
 import Plugins from '../templates/plugins';
+import Precios from '../templates/precios';
 
 function Navbar() {
   return (
@@ -22,7 +23,7 @@ function Navbar() {
       <Link to="/plugins" className="nav-link">Plugins</Link>
       </li>
       <li className="nav-item">
-        <a className="nav-link" href="#">Precios</a>
+      <Link to="/precios" className="nav-link">Precios</Link>
       </li>
       <li className="nav-item">
         <a className="btn btn-outline-success" href="#">Ir al panel</a>
@@ -34,6 +35,7 @@ function Navbar() {
 <Route exact path="/" component={Landingpage} />
 <Route path="/caracteristicas" component={Caracteristicas} />
 <Route path="/plugins" component={Plugins} />
+<Route path="/precios" component={Precios} />
 
 </Router>
   );
