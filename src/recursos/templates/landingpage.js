@@ -1,5 +1,7 @@
 import React from 'react';
-import '../css/landing.scss';
+import '../sass/landing.scss';
+import AdminSignIn from '../componentes/modal-sesion-admins';
+import EmpleadoSignIn from '../componentes/modal-sesion-empleados';
 
 function Landingpage() {
     return (
@@ -11,17 +13,15 @@ function Landingpage() {
         <div className="col-xl-9 mx-auto">
           <h1 className="mb-5">Administra tu negocio con Vendetta como todo un PRO!</h1>
         </div>
-        <div className="col-md-10 col-lg-8 col-xl-7 mx-auto">
-          <form>
-            <div className="form-row">
-              <div className="col-12 col-md-9 mb-2 mb-md-0">
-                <input type="email" className="form-control form-control-lg" placeholder="Tu correo aquí..." />
+        <div className="col-12 col-sm-6 mx-auto">
+        <div className="form-row">
+              <div className="col-12 col-sm-6 my-1">
+              <AdminSignIn buttonLabel="Entrar como Admin" />
               </div>
-              <div className="col-12 col-md-3">
-                <button type="submit" className="btn btn-block btn-lg btn-primary">Empezar!</button>
+              <div className="col-12 col-sm-6 my-1">
+                <EmpleadoSignIn buttonLabel="Entrar como empleado" />
               </div>
             </div>
-          </form>
         </div>
       </div>
     </div>
@@ -122,19 +122,17 @@ function Landingpage() {
     <div className="container">
       <div className="row">
         <div className="col-xl-9 mx-auto">
-          <h2 className="mb-4">Ready to get started? Sign up now!</h2>
+          <h2 className="mb-4">¿Listo para vender mas? Registrate con...</h2>
         </div>
         <div className="col-md-10 col-lg-8 col-xl-7 mx-auto">
-          <form>
             <div className="form-row">
-              <div className="col-12 col-md-9 mb-2 mb-md-0">
-                <input type="email" className="form-control form-control-lg" placeholder="Enter your email..." />
+              <div className="col-12 col-sm-6">
+              <button type="submit" className="btn btn-block btn-lg btn-primary">Facebook</button>
               </div>
-              <div className="col-12 col-md-3">
-                <button type="submit" className="btn btn-block btn-lg btn-primary">Sign up!</button>
+              <div className="col-12 col-sm-6">
+                <button type="submit" className="btn btn-block btn-lg btn-primary">Google</button>
               </div>
             </div>
-          </form>
         </div>
       </div>
     </div>

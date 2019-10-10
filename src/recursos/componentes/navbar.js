@@ -25,9 +25,6 @@ function Navbar() {
       <li className="nav-item">
       <Link to="/precios" className="nav-link">Precios</Link>
       </li>
-      <li className="nav-item">
-        <a className="btn btn-outline-success" href="#">Ir al panel</a>
-      </li>
     </ul>
   </div>
 </nav>
